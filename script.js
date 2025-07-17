@@ -1,5 +1,5 @@
 // Typing Effect
-const text = "Welcome to NeuroCore AI Systems.";
+const text = "Welcome to the amazing world of websites created by Raj.";
 let index = 0;
 const speed = 70;
 
@@ -12,25 +12,50 @@ function type() {
 }
 window.onload = type;
 
-// Particles JS
+// Particles JS (Attractive Animation)
 tsParticles.load("tsparticles", {
     fullScreen: { enable: true, zIndex: -1 },
     particles: {
-        number: { value: 80 },
-        color: { value: "#00f2ff" },
+        number: { value: 100 },
+        color: { value: "#00f2ff" }, // Same neon blue
         shape: { type: "circle" },
-        opacity: { value: 0.5, random: true },
-        size: { value: 3, random: true },
+        opacity: {
+            value: 0.5,
+            random: true,
+            anim: { enable: true, speed: 0.8, opacity_min: 0.3, sync: false }
+        },
+        size: {
+            value: 3,
+            random: true,
+            anim: { enable: true, speed: 1, size_min: 1, sync: false }
+        },
         move: {
             enable: true,
-            speed: 0.6,
+            speed: 0.8, // Slightly faster
             direction: "none",
-            outModes: "out"
+            outModes: "out",
+            random: true, // Random movement for dynamic feel
+            straight: false,
+            attract: { enable: false }
+        },
+        links: {
+            enable: true,
+            distance: 120,
+            color: "#00f2ff",
+            opacity: 0.4,
+            width: 1,
+            blink: true // Lines slightly blink
         }
     },
     interactivity: {
-        events: { onHover: { enable: true, mode: "repulse" } },
-        modes: { repulse: { distance: 100 } }
+        events: {
+            onHover: { enable: true, mode: "grab" },
+            onClick: { enable: true, mode: "push" }
+        },
+        modes: {
+            grab: { distance: 200, links: { opacity: 0.7 } },
+            push: { quantity: 3 }
+        }
     },
     background: { color: "#0b0c10" }
 });
