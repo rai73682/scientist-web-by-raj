@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #0b0c10;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #00f2ff;
+}
+
+h1.glow {
+    font-family: 'Orbitron', sans-serif;
+    color: #00f2ff;
+    text-shadow: 0 0 8px #00f2ff, 0 0 16px #00f2ff;
+    font-size: 28px;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #ccc;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #00f2ff;
+}
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 60px;
+    gap: 40px;
+}
+
+.hero-text h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 32px;
+    color: #00f2ff;
+    margin-bottom: 10px;
+}
+
+.cursor {
+    color: #00f2ff;
+    animation: blink 0.7s steps(1) infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.hero-text p {
+    font-size: 16px;
+    color: #ccc;
+}
+
+.btn {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    background: #00f2ff;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    box-shadow: 0 0 10px #00f2ff;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #00d0ff;
+}
+
+.hero-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #00f2ff44;
+}
+
+.features {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.section-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 28px;
+    color: #00f2ff;
+    margin-bottom: 30px;
+}
+
+.feature-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card {
+    background: #111;
+    padding: 20px;
+    border: 1px solid #00f2ff33;
+    border-radius: 10px;
+    width: 280px;
+    box-shadow: 0 0 10px #00f2ff22;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px #00f2ff99;
+}
+
+.card h3 {
+    color: #00f2ff;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #ccc;
+}
