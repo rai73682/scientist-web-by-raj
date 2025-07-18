@@ -16,22 +16,22 @@ window.onload = type;
 tsParticles.load("tsparticles", {
     fullScreen: { enable: true, zIndex: -1 },
     particles: {
-        number: { value: 100 },
+        number: { value: 150 },
         color: { value: "#00f2ff" }, // Same neon blue
         shape: { type: "circle" },
         opacity: {
-            value: 0.5,
+            value: 1.2,
             random: true,
             anim: { enable: true, speed: 0.8, opacity_min: 0.3, sync: false }
         },
         size: {
-            value: 3,
+            value: 5,
             random: true,
             anim: { enable: true, speed: 1, size_min: 1, sync: false }
         },
         move: {
             enable: true,
-            speed: 0.8, // Slightly faster
+            speed: 1.5, // Slightly faster
             direction: "none",
             outModes: "out",
             random: true, // Random movement for dynamic feel
@@ -40,10 +40,10 @@ tsParticles.load("tsparticles", {
         },
         links: {
             enable: true,
-            distance: 120,
+            distance: 110,
             color: "#00f2ff",
-            opacity: 0.4,
-            width: 1,
+            opacity: 1.4,
+            width: 2,
             blink: true // Lines slightly blink
         }
     },
