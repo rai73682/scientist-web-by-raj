@@ -85,6 +85,30 @@
       alert("Right-click is disabled on this site!");
   }, false);
 </script>
+    <script>
+  document.onkeydown = function(e) {
+      // Disable F12
+      if(e.keyCode == 123) {
+          alert("F12 is disabled on this site!");
+          return false;
+      }
+      // Disable Ctrl+Shift+I
+      if(e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+          alert("Inspect Element is disabled!");
+          return false;
+      }
+      // Disable Ctrl+Shift+C
+      if(e.ctrlKey && e.shiftKey && e.keyCode == 67) {
+          alert("Inspect Element is disabled!");
+          return false;
+      }
+      // Disable Ctrl+U
+      if(e.ctrlKey && e.keyCode == 85) {
+          alert("View Source is disabled!");
+          return false;
+      }
+  };
+</script>
 
 </body>
 
