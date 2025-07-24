@@ -1,114 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<header class="main-header">
+    <div class="logo">RAJ Web Lab</div>
+    <nav class="navbar">
+        <a href="#hero">Home</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
 <head>
-    <meta name="google-site-verification" content="google8803d58f13a8bd8e.html" />
-    <!-- SEO Meta Tags -->
-    <meta name="description"
-        content="MR. RAJ PANCHAL - Advanced Artificial Intelligence research in neural networks, quantum computing, and future technology.">
-    <meta name="keywords"
-        content="AI, Artificial Intelligence, Quantum Computing, Neural Networks, Machine Learning, NeuroCore">
-    <meta name="author" content="Raj | Scientist Web">
-    <meta name="robots" content="index, follow">
-
-    <!-- Social Media (Open Graph) -->
-    <meta property="og:title" content="NeuroCore AI Systems" />
-    <meta property="og:description" content="Cutting-edge AI research for the next generation." />
-    <meta property="og:image" content="https://yourdomain.com/path-to-thumbnail.jpg" />
-    <meta property="og:type" content="website" />
-
+    <audio id="hoverSound" src="https://assets.mixkit.co/sfx/preview/mixkit-game-click-1114.mp3" preload="auto"></audio>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MR. RAJ PANCHAL </title>
+    <meta name="description" content="Professional Web Lab by MR. RAJ PANCHAL with AI-enhanced designs." />
+    <meta name="author" content="Raj Panchal" />
+    <title>RAJ Web Lab | AI Websites</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" href="favicon.ico" />
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto&display=swap"
         rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
 </head>
 
 <body>
-    <!-- Header and Nav -->
     <div class="container">
-        <header>
-            <h1 class="glow">MR. R PANCHAL</h1>
-            <nav>
-                <a href="#">Home</a>
-                <a href="#">Mission</a>
-                <a href="#">Solutions</a>
-                <a href="#">Contact</a>
-            </nav>
+        <!-- Hero Section -->
+        <header class="hero">
+            <div class="hero-text">
+                <h1 class="glow">Hi, I’m <span class="highlight">MR. RAJ PANCHAL</span></h1>
+                <h2><span id="typed-text" class="glow-text"></span><span class="cursor">|</span></h2>
+            </div>
         </header>
 
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-text">
-                <h2>
-                    <span id="typed-text" class="glow-text"></span><span class="cursor">|</span>
-                </h2>
-                <p class="glow-text">AMDAVADI KARE AVU KOI NO KARI SAKE</p>
-                <a href="#" class="btn">Explore Now</a>
-            </div>
-            <div class="hero-img">
-                <img src="https://images.unsplash.com/photo-1611928481514-dbe8714b42a4?auto=format&fit=crop&w=800&q=80"
-                    alt="AI scientist illustration">
+        <!-- Services -->
+        <section class="features">
+            <h2 class="section-title">🚀 Services</h2>
+            <div class="feature-grid">
+                <div class="card glass">
+                    <h3>🌐 Web Development</h3>
+                    <p>Responsive and modern websites.</p>
+                </div>
+                <div class="card glass">
+                    <h3>🎨 UI/UX Design</h3>
+                    <p>Creative and functional user interfaces.</p>
+                </div>
+                <div class="card glass">
+                    <h3>🤖 AI Integration</h3>
+                    <p>Smart automation and AI features.</p>
+                </div>
             </div>
         </section>
 
-        <!-- Features Section -->
-        <section class="features" id="features">
-            <h2 class="section-title">⚙️ AI Capabilities</h2>
+        <!-- Portfolio -->
+        <section class="features">
+            <h2 class="section-title">🧪 Portfolio</h2>
             <div class="feature-grid">
-                <div class="card">
-                    <h3>🧠 Neural Analysis</h3>
-                    <p>Advanced neural models decoding real-time brain patterns.</p>
+                <div class="card glass">
+                    <img src="https://via.placeholder.com/280x160" class="portfolio-img" />
+                    <h3>Project One</h3>
+                    <p>AI Dashboard Interface</p>
                 </div>
-                <div class="card">
-                    <h3>🔬 Research Labs</h3>
-                    <p>Simulated environments for machine cognition and logic evolution.</p>
+                <div class="card glass">
+                    <img src="https://via.placeholder.com/280x160" class="portfolio-img" />
+                    <h3>Project Two</h3>
+                    <p>Portfolio with animations</p>
                 </div>
-                <div class="card">
-                    <h3>💾 Quantum Compute</h3>
-                    <p>Harnessing qubits for ultra-fast data processing & AI synergy.</p>
+                <div class="card glass">
+                    <img src="https://via.placeholder.com/280x160" class="portfolio-img" />
+                    <h3>Project Three</h3>
+                    <p>Landing with chatbot</p>
                 </div>
             </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="features">
+            <h2 class="section-title">📬 Contact Me</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required />
+                <input type="email" placeholder="Your Email" required />
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
         </section>
     </div>
 
-    <!-- Background Particle Animation -->
-    <div id="tsparticles"></div>
-    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+    <!-- Floating Code Particles -->
+    <div id="custom-particles"></div>
+
+    <!-- Scripts -->
     <script src="script.js"></script>
-    <script>
-  // Disable right-click
-  document.addEventListener('contextmenu', function(e) {
-      e.preventDefault();
-      alert("Right-click is disabled on this site!");
-  }, false);
-</script>
-    <script>
-  document.onkeydown = function(e) {
-      // Disable F12
-      if(e.keyCode == 123) {
-          alert("F12 is disabled on this site!");
-          return false;
-      }
-      // Disable Ctrl+Shift+I
-      if(e.ctrlKey && e.shiftKey && e.keyCode == 73) {
-          alert("Inspect Element is disabled!");
-          return false;
-      }
-      // Disable Ctrl+Shift+C
-      if(e.ctrlKey && e.shiftKey && e.keyCode == 67) {
-          alert("Inspect Element is disabled!");
-          return false;
-      }
-      // Disable Ctrl+U
-      if(e.ctrlKey && e.keyCode == 85) {
-          alert("View Source is disabled!");
-          return false;
-      }
-  };
-</script>
+
+    <footer class="main-footer">
+        <p>Made with ❤️ by MR. RAJ PANCHAL</p>
+        <div class="footer-links">
+            <a href="mailto:yourmail@example.com" class="footer-icon email">
+                <i class="fas fa-envelope"></i> Email
+            </a>
+            <a href="error.html" class="footer-icon facebook">
+                <i class="fab fa-facebook"></i> Facebook
+            </a>
+            <a href="error.html" class="footer-icon instagram">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+            <a href="error.html" class="footer-icon whatsapp">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+        </div>
+    </footer>
 
 </body>
 
