@@ -94,6 +94,34 @@
       </div>
     </div>
   </section>
+ <!-- 🔊 Audio Playback on Page Load -->
+<audio id="errorAudio">
+  <source src="404-error.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  window.addEventListener('DOMContentLoaded', function () {
+    // Try playing after small delay
+    setTimeout(function () {
+      var audio = document.getElementById('errorAudio');
+      if (audio) {
+        audio.play().catch(function (err) {
+          console.log("Autoplay blocked, waiting for user interaction.");
+        });
+      }
+    }, 1000);
+  });
+
+  // Optional: Force play on any user interaction
+  document.addEventListener('click', function () {
+    var audio = document.getElementById('errorAudio');
+    if (audio && audio.paused) {
+      audio.play();
+    }
+  });
+</script>
+
+
 </body>
 
 </html>
