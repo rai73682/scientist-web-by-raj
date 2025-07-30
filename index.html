@@ -1,137 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<header class="main-header">
-    <div class="logo">RAJ Web Lab</div>
-    <nav class="navbar">
-        <a href="#hero">Home</a>
-        <a href="#services">Services</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
-
 <head>
-    <audio id="hoverSound" src="https://assets.mixkit.co/sfx/preview/mixkit-game-click-1114.mp3" preload="auto"></audio>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Professional Web Lab by MR. RAJ PANCHAL with AI-enhanced designs." />
-    <meta name="author" content="Raj Panchal" />
-    <title>RAJ Web Lab | AI Websites</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="icon" href="favicon.ico" />
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto&display=swap"
-        rel="stylesheet" />
+  <meta charset="UTF-8">
+  <title>{{ title }}</title>
 </head>
-
 <body>
-    <div class="container">
-        <!-- Hero Section -->
-        <header class="hero">
-            <div class="hero-text">
-                <h1 class="glow">Hi, I’m <span class="highlight">MR. RAJ PANCHAL</span></h1>
-                <h2><span id="typed-text" class="glow-text"></span><span class="cursor">|</span></h2>
-            </div>
-        </header>
+  <h1 style="text-align:center; font-size: 30px; color: darkred;">
+    {{ title }}
+  </h1>
 
-        <!-- Services -->
-        <section class="features">
-            <h2 class="section-title">🚀 Services</h2>
-            <div class="feature-grid">
-                <div class="card glass">
-                    <h3>🌐 Web Development</h3>
-                    <p>Responsive and modern websites.</p>
-                </div>
-                <div class="card glass">
-                    <h3>🎨 UI/UX Design</h3>
-                    <p>Creative and functional user interfaces.</p>
-                </div>
-                <div class="card glass">
-                    <h3>🤖 AI Integration</h3>
-                    <p>Smart automation and AI features.</p>
-                </div>
-            </div>
-        </section>
+  <form method="post" action="/download_youtube">
+    <h2>YouTube Download</h2>
+    <input type="text" name="url" placeholder="Enter YouTube URL">
+    <button type="submit">Download</button>
+  </form>
 
-        <!-- Portfolio -->
-        <section class="features">
-            <h2 class="section-title">🧪 Portfolio</h2>
-            <div class="feature-grid">
-                <div class="card glass">
-                    <img src="https://via.placeholder.com/280x160" class="portfolio-img" />
-                    <h3>Project One</h3>
-                    <p>AI Dashboard Interface</p>
-                </div>
-                <div class="card glass">
-                    <img src="https://via.placeholder.com/280x160" class="portfolio-img" />
-                    <h3>Project Two</h3>
-                    <p>Portfolio with animations</p>
-                </div>
-                <div class="card glass">
-                    <img src="https://via.placeholder.com/280x160" class="portfolio-img" />
-                    <h3>Project Three</h3>
-                    <p>Landing with chatbot</p>
-                </div>
-            </div>
-        </section>
+  <form method="post" action="/download_instagram">
+    <h2>Instagram Download</h2>
+    <input type="text" name="url" placeholder="Enter Instagram Reel URL">
+    <button type="submit">Download</button>
+  </form>
 
-        <!-- Contact -->
-        <section class="features">
-            <h2 class="section-title">📬 Contact Me</h2>
-            <form class="contact-form">
-                <input type="text" placeholder="Your Name" required />
-                <input type="email" placeholder="Your Email" required />
-                <textarea placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
-    </div>
-
-    <!-- Floating Code Particles -->
-    <div id="custom-particles"></div>
-
-    <!-- Scripts -->
-    <script src="script.js"></script>
-
-    <footer class="main-footer">
-        <p>Made with ❤️ by MR. RAJ PANCHAL</p>
-        <div class="footer-links">
-            <a href="mailto:yourmail@example.com" class="footer-icon email">
-                <i class="fas fa-envelope"></i> Email
-            </a>
-            <a href="error.html" class="footer-icon facebook">
-                <i class="fab fa-facebook"></i> Facebook
-            </a>
-            <a href="error.html" class="footer-icon instagram">
-                <i class="fab fa-instagram"></i> Instagram
-            </a>
-            <a href="error.html" class="footer-icon whatsapp">
-                <i class="fab fa-whatsapp"></i> WhatsApp
-            </a>
-        </div>
-    </footer>
-<script>
-  // Right-click disable
-  document.addEventListener('contextmenu', event => event.preventDefault());
-
-  // Inspect element & view source disable
-  document.onkeydown = function (e) {
-    if (
-      e.keyCode === 123 || // F12
-      (e.ctrlKey && e.shiftKey && e.keyCode === 73) || // Ctrl+Shift+I
-      (e.ctrlKey && e.shiftKey && e.keyCode === 74) || // Ctrl+Shift+J
-      (e.ctrlKey && e.keyCode === 85) || // Ctrl+U
-      (e.ctrlKey && e.keyCode === 83) // Ctrl+S
-    ) {
-      return false;
-    }
-  };
-
-  // Text copy disable
-  document.addEventListener('copy', e => e.preventDefault());
-</script>
-
+  <form method="post" action="/download_terabox">
+    <h2>Terabox Download</h2>
+    <input type="text" name="url" placeholder="Enter Terabox Public Link">
+    <button type="submit">Download</button>
+  </form>
 </body>
-
 </html>
